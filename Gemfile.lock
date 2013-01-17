@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/NARKOZ/gitlab
+  remote: https://github.com/NARKOZ/gitlab
   revision: f2ba111dba70eca5346a880c541dafaf35d3332a
   specs:
     gitlab (2.2.0)
