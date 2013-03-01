@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.12'
 gem 'mongoid', '~> 2.4.10'
 gem 'mongoid_rails_migrations'
-gem 'devise', '~> 1.5.3'
+gem 'devise', '~> 1.5.4'
 gem 'haml'
 gem 'htmlentities', "~> 4.3.0"
 gem 'rack-ssl', :require => 'rack/ssl'   # force SSL
@@ -49,11 +49,13 @@ gem 'campy'
 # Hipchat
 gem 'hipchat'
 # Google Talk
-gem 'xmpp4r'
+gem 'xmpp4r', :require => ["xmpp4r", "xmpp4r/muc"]
 # Hoiio (SMS)
 gem 'hoi'
 # Pushover (iOS Push notifications)
 gem 'rushover'
+# Hubot
+gem 'httparty'
 
 # Authentication
 # ---------------------------------------
@@ -81,6 +83,11 @@ group :development, :test do
 #  gem 'rpm_contrib'
 #  gem 'newrelic_rpm'
   gem 'capistrano'
+
+  # better errors
+  gem 'better_errors', :platform => :ruby_19
+  gem 'binding_of_caller', :platform => :ruby_19
+  gem 'meta_request', :platform => :ruby_19
 end
 
 gem 'foreman', :group => :development
